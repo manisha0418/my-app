@@ -11,7 +11,6 @@ pipeline {
         SONAR_HOST = 'http://54.80.62.172:9000'                      // SonarQube URL
         JAR_FILE = 'my-app-1.0.0.jar'
     }
-
     stages {
 
         stage('Checkout') {
