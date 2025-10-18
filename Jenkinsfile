@@ -60,7 +60,7 @@ ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} << 'EOF'
   cd ~/deployments/my-app
   curl -f -O http://54.164.115.219:8081/repository/maven-releases/com/example/springboot-hello/1.0/springboot-hello-1.0.jar
   pkill -f ${JAR_FILE} || true
-  nohup java -jar springboot-hello-1.0.jar > app.log 2>&1 &
+  nohup timeout 30 java -jar springboot-hello-1.0.jar > app.log 2>&1 &
 EOF
                     '''
                 }
