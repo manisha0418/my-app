@@ -17,6 +17,7 @@ public class DemoApplication {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("message", "Welcome to Spring Boot running on port 8080!");
+        model.addAttribute("message", "Welcome to Spring Boot Manisha");
         return "index";
     }
 }
