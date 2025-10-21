@@ -5,10 +5,10 @@ pipeline {
         MVN_HOME = '/usr/share/maven'                                 // Maven installation path
         SONAR_TOKEN = credentials('sonar-token')                      // SonarQube token
         NEXUS_CREDS = credentials('nexus-user')                       // Nexus credentials (username/password)
-        NEXUS_REPO = 'http://54.164.115.219:8081/repository/maven-releases/'  // Nexus repo URL
+        NEXUS_REPO = 'http://13.223.41.234:8081/repository/maven-releases/'  // Nexus repo URL
         DEPLOY_USER = 'ubuntu'                                        // SSH user on deploy server
-        DEPLOY_HOST = '54.164.14.146'                                 // Deploy server IP
-        SONAR_HOST = 'http://54.80.62.172:9000'                      // SonarQube URL
+        DEPLOY_HOST = '3.81.87.203'                                 // Deploy server IP
+        SONAR_HOST = 'http://52.23.215.250:9000'                      // SonarQube URL
         JAR_FILE = 'my-app-1.0.0.jar'
     }
     stages {
