@@ -45,7 +45,7 @@ pipeline {
             steps {
                 sh """
                     ${MVN_HOME}/bin/mvn deploy -B \
-                    -DaltDeploymentRepository=nexus::default::http://${NEXUS_CREDS_USR}:${NEXUS_CREDS_PSW}@54.164.115.219:8081/repository/maven-releases/
+                    -DaltDeploymentRepository=nexus::default::http://${NEXUS_CREDS_USR}:${NEXUS_CREDS_PSW}@13.223.41.234:8081/repository/maven-releases/
                 """
             }
         }
